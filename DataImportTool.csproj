@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28ABD257-0D61-6008-C07E-60C668785406}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataImportTool</RootNamespace>
+    <AssemblyName>DataImportTool</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>7.3</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.5.3.3, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.4.5.3.3\lib\net40\EPPlus.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboInputForm.Designer.cs">
+      <DependentUpon>ComboInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPropertyForm.Designer.cs">
+      <DependentUpon>InsertPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupImportForm.Designer.cs">
+      <DependentUpon>GroupImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertModeForm.Designer.cs">
+      <DependentUpon>InsertModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPropertyValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPropertyValueForm.Designer.cs">
+      <DependentUpon>InsertPropertyValueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyMetaInfo.cs" />
+    <Compile Include="PropertyValueRow.cs" />
+    <Compile Include="DbHelper.cs" />
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="BatchPropertyValueImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchPropertyValueImportForm.Designer.cs">
+      <DependentUpon>BatchPropertyValueImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BatchPropertyImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchPropertyImportForm.Designer.cs">
+      <DependentUpon>BatchPropertyImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyBatchRow.cs" />
+    <Compile Include="SuperBatchImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperBatchImportForm.Designer.cs">
+      <DependentUpon>SuperBatchImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperBatchPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperBatchPreviewForm.Designer.cs">
+      <DependentUpon>SuperBatchPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperBatchImportEngine.cs" />
+    <Compile Include="SuperBatchModels.cs" />
+    <Compile Include="UpdateManager.cs" />
+    <Compile Include="UpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchRuleConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchRuleConfigForm.Designer.cs">
+      <DependentUpon>MatchRuleConfigForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchRuleExclusions.cs" />
+    <Compile Include="ExcludedFieldsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcludedFieldsForm.Designer.cs">
+      <DependentUpon>ExcludedFieldsForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchRuleStaging.cs" />
+    <Compile Include="CodeLinkSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeLinkSettingForm.Designer.cs">
+      <DependentUpon>CodeLinkSettingForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigMigrationEngine.cs" />
+    <Compile Include="ConfigMigrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigMigrationForm.Designer.cs">
+      <DependentUpon>ConfigMigrationForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeLinkCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BatchAddCommonPropertyValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MetaPropertyImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetaPropertyImportForm.Designer.cs">
+      <DependentUpon>MetaPropertyImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetaPropertyPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetaPropertyPreviewForm.Designer.cs">
+      <DependentUpon>MetaPropertyPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WftScriptRemoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WftScriptRemoveForm.Designer.cs">
+      <DependentUpon>WftScriptRemoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogViewerForm.Designer.cs">
+      <DependentUpon>LogViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLogExporter.cs" />
+    <Compile Include="ImportPreviewHelper.cs" />
+    <Compile Include="ImportPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportPreviewForm.Designer.cs">
+      <DependentUpon>ImportPreviewForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BatchAddCommonPropertyValueForm.resx">
+      <DependentUpon>BatchAddCommonPropertyValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BatchPropertyImportForm.resx">
+      <DependentUpon>BatchPropertyImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeLinkSettingForm.resx">
+      <DependentUpon>CodeLinkSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboInputForm.resx">
+      <DependentUpon>ComboInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigMigrationForm.resx">
+      <DependentUpon>ConfigMigrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupImportForm.resx">
+      <DependentUpon>GroupImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPropertyForm.resx">
+      <DependentUpon>InsertPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPropertyValueForm.resx">
+      <DependentUpon>InsertPropertyValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchRuleConfigForm.resx">
+      <DependentUpon>MatchRuleConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetaPropertyImportForm.resx">
+      <DependentUpon>MetaPropertyImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertModeForm.resx">
+      <DependentUpon>InsertModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogViewerForm.resx">
+      <DependentUpon>LogViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperBatchImportForm.resx">
+      <DependentUpon>SuperBatchImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperBatchPreviewForm.resx">
+      <DependentUpon>SuperBatchPreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WftScriptRemoveForm.resx">
+      <DependentUpon>WftScriptRemoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\EmbeddedImages.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deps\EPPlus.dll">
+      <LogicalName>DataImportTool.Deps.EPPlus.dll</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deps\Newtonsoft.Json.dll">
+      <LogicalName>DataImportTool.Deps.Newtonsoft.Json.dll</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
