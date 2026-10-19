@@ -241,7 +241,7 @@ namespace DataImportTool
             this._chkMeta.AutoSize = true;
             this._chkMeta.Checked = true;
             this._chkMeta.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._chkMeta.Location = new System.Drawing.Point(18, 86);
+            this._chkMeta.Location = new System.Drawing.Point(18, 82);
             this._chkMeta.Name = "_chkMeta";
             this._chkMeta.Size = new System.Drawing.Size(104, 19);
             this._chkMeta.TabIndex = 10;
