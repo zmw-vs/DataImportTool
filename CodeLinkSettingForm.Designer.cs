@@ -388,7 +388,7 @@ namespace DataImportTool
             this.MinimumSize = new System.Drawing.Size(850, 670);
             this.Name = "CodeLinkSettingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "领码设置（class_link_code_setting / part）";
+            this.Text = "领码设置";
             ((System.ComponentModel.ISupportInitialize)(this._dgvMerge)).EndInit();
             this._ctxMerge.ResumeLayout(false);
             this.ResumeLayout(false);

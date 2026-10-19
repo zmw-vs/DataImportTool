@@ -247,7 +247,7 @@
             this.MaximizeBox = false;
             this.Name = "MatchRuleConfigForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "零件匹配规则配置（match_rule / part）";
+            this.Text = "零件匹配规则配置";
             this.ResumeLayout(false);
             this.PerformLayout();
 
