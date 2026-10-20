@@ -34,11 +34,6 @@ namespace DataImportTool
             txtUsername.Text = currentConfig.UserId;
             txtPassword.Text = currentConfig.Password;
 
-            if (currentConfig.UseWindowsAuth)
-                rbWinAuth.Checked = true;
-            else
-                rbSqlAuth.Checked = true;
-
             UpdateAuthControls();
         }
 
@@ -113,7 +108,6 @@ namespace DataImportTool
             {
                 Server = txtServer.Text.Trim(),
                 Database = txtDatabase.Text.Trim(),
-                UseWindowsAuth = rbWinAuth.Checked,
                 UserId = rbSqlAuth.Checked ? txtUsername.Text.Trim() : string.Empty,
                 Password = rbSqlAuth.Checked ? txtPassword.Text.Trim() : string.Empty
             };

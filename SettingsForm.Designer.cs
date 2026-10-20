@@ -33,7 +33,6 @@ namespace DataImportTool
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rbSqlAuth = new System.Windows.Forms.RadioButton();
-            this.rbWinAuth = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -54,7 +53,6 @@ namespace DataImportTool
             this.grpDb.Controls.Add(this.txtUsername);
             this.grpDb.Controls.Add(this.label2);
             this.grpDb.Controls.Add(this.rbSqlAuth);
-            this.grpDb.Controls.Add(this.rbWinAuth);
             this.grpDb.Controls.Add(this.label1);
             this.grpDb.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.grpDb.Location = new System.Drawing.Point(10, 8);
@@ -200,19 +198,6 @@ namespace DataImportTool
             this.rbSqlAuth.UseVisualStyleBackColor = true;
             this.rbSqlAuth.CheckedChanged += new System.EventHandler(this.rbAuth_CheckedChanged);
             // 
-            // rbWinAuth
-            // 
-            this.rbWinAuth.AutoSize = true;
-            this.rbWinAuth.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.rbWinAuth.Location = new System.Drawing.Point(245, 97);
-            this.rbWinAuth.Margin = new System.Windows.Forms.Padding(2);
-            this.rbWinAuth.Name = "rbWinAuth";
-            this.rbWinAuth.Size = new System.Drawing.Size(161, 24);
-            this.rbWinAuth.TabIndex = 3;
-            this.rbWinAuth.Text = "Windows 身份验证";
-            this.rbWinAuth.UseVisualStyleBackColor = true;
-            this.rbWinAuth.CheckedChanged += new System.EventHandler(this.rbAuth_CheckedChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -288,7 +273,6 @@ namespace DataImportTool
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton rbSqlAuth;
-        private System.Windows.Forms.RadioButton rbWinAuth;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Label lblTestResult;
