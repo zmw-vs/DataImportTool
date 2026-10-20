@@ -1,6 +1,8 @@
 # DataImportTool
 
-Windows 的桌面导入工具。WinForms + .NET Framework 4.8.1，把 Excel 里的分类、属性、属性值、元模型属性批量写进 PLM 数据库，顺带维护零件匹配规则、领码规则，以及跨库的配置迁移。
+基于 **WinForms + .NET Framework 4.8.1** 开发的 Windows 桌面数据导入工具；
+支持从 Excel 批量读取元模型、分类、属性、属性值等业务数据并写入 SQL Server；
+内置设置零件匹配规则、领码规则维护能力，提供跨库配置迁移、全属性值追加等全自动 / 半自动化配置管理功能。
 
 ## 能干什么
 
@@ -43,7 +45,8 @@ MSBuild.exe DataImportTool.csproj /t:Rebuild /p:Configuration=Debug /p:Platform=
 ## 注意
 
 - 工具直接写数据库，**跑之前先备份**。配置迁移自带备份和恢复，但也建议自己再备一份。
-- `config_item` 这类配置表是版本链结构（同一个 config_name 好几条记录，靠 version + release_datetime 区分），工具只改最新那条，不删历史。
+- `config_item` 这类配置表是版本链结构（同一个 config_name 好几条记录，靠 version + release_datetime 区分），工具只改最新那条，不修改历史。
+- 仅支持Windows服务器和sqlserver数据库；linux、pg和oracle环境暂不支持
 
 ## 第三方依赖许可
 
