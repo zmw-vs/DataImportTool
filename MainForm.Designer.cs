@@ -363,7 +363,7 @@ namespace DataImportTool
             this._card4Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this._card4Title.Location = new System.Drawing.Point(54, 5);
             this._card4Title.Name = "_card4Title";
-            this._card4Title.Size = new System.Drawing.Size(208, 24);
+            this._card4Title.Size = new System.Drawing.Size(208, 21);
             this._card4Title.TabIndex = 2;
             this._card4Title.Text = "分类下批量添加/删除属性";
             // 
@@ -371,7 +371,7 @@ namespace DataImportTool
             // 
             this._card4Desc.Font = new System.Drawing.Font("Segoe UI", 8F);
             this._card4Desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this._card4Desc.Location = new System.Drawing.Point(54, 26);
+            this._card4Desc.Location = new System.Drawing.Point(54, 31);
             this._card4Desc.Name = "_card4Desc";
             this._card4Desc.Size = new System.Drawing.Size(211, 20);
             this._card4Desc.TabIndex = 3;
@@ -397,7 +397,7 @@ namespace DataImportTool
             // 
             this._card5Title.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this._card5Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            this._card5Title.Location = new System.Drawing.Point(40, 0);
+            this._card5Title.Location = new System.Drawing.Point(40, 6);
             this._card5Title.Name = "_card5Title";
             this._card5Title.Size = new System.Drawing.Size(120, 19);
             this._card5Title.TabIndex = 2;
@@ -426,11 +426,11 @@ namespace DataImportTool
             // 
             this._card5Desc.Font = new System.Drawing.Font("Segoe UI", 8F);
             this._card5Desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this._card5Desc.Location = new System.Drawing.Point(38, 19);
+            this._card5Desc.Location = new System.Drawing.Point(38, 32);
             this._card5Desc.Name = "_card5Desc";
-            this._card5Desc.Size = new System.Drawing.Size(327, 38);
+            this._card5Desc.Size = new System.Drawing.Size(327, 25);
             this._card5Desc.TabIndex = 3;
-            this._card5Desc.Text = "选择分类下的属性后批量导入其值，功能重合，用处不大，按需使用";
+            this._card5Desc.Text = "批量导入属性值，与标准功能重合，用处不大";
             // 
             // _pnlCard6
             // 
@@ -528,7 +528,7 @@ namespace DataImportTool
             this._card7Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this._card7Title.Location = new System.Drawing.Point(41, 4);
             this._card7Title.Name = "_card7Title";
-            this._card7Title.Size = new System.Drawing.Size(185, 26);
+            this._card7Title.Size = new System.Drawing.Size(185, 23);
             this._card7Title.TabIndex = 2;
             this._card7Title.Text = "分类下属性值批量导入";
             // 
@@ -536,7 +536,7 @@ namespace DataImportTool
             // 
             this._card7Desc.Font = new System.Drawing.Font("Segoe UI", 8F);
             this._card7Desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this._card7Desc.Location = new System.Drawing.Point(41, 27);
+            this._card7Desc.Location = new System.Drawing.Point(41, 33);
             this._card7Desc.Name = "_card7Desc";
             this._card7Desc.Size = new System.Drawing.Size(282, 20);
             this._card7Desc.TabIndex = 3;
@@ -583,7 +583,7 @@ namespace DataImportTool
             this._card9Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             this._card9Title.Location = new System.Drawing.Point(45, 8);
             this._card9Title.Name = "_card9Title";
-            this._card9Title.Size = new System.Drawing.Size(188, 24);
+            this._card9Title.Size = new System.Drawing.Size(188, 20);
             this._card9Title.TabIndex = 2;
             this._card9Title.Text = "元模型字段批量导入";
             // 
@@ -591,7 +591,7 @@ namespace DataImportTool
             // 
             this._card9Desc.Font = new System.Drawing.Font("Segoe UI", 8F);
             this._card9Desc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this._card9Desc.Location = new System.Drawing.Point(46, 28);
+            this._card9Desc.Location = new System.Drawing.Point(46, 32);
             this._card9Desc.Name = "_card9Desc";
             this._card9Desc.Size = new System.Drawing.Size(223, 17);
             this._card9Desc.TabIndex = 3;
