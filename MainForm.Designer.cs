@@ -795,7 +795,7 @@ namespace DataImportTool
             this.groupBox1.Size = new System.Drawing.Size(691, 150);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "使用须知！必看";
+            this.groupBox1.Text = "使用须知！必看！！！";
             // 
             // groupBox2
             // 
